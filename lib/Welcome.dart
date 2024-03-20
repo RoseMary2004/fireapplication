@@ -13,14 +13,21 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(
-      title: Text('Welcome'),
-    ),
-    body: Center(
+    return Scaffold(
+        body: Center(
+
+
+
       child: Column(
         children: [
+           Text('Welcome',
+           style: TextStyle(
+             color: Colors.cyan,
+             fontSize: 40
+           ),
+           ),
           SizedBox(height:40,),
-          Text('welcome to flutter app using flutter firebase'),
+          Text('Welcome to flutter app using flutter firebase'),
           SizedBox(height: 50,),
           Image.network(
             "https://i0.wp.com/groupdiscussion.gkbymrdj.com/wp-content/uploads/2021/05/digital-marketing-courses.png?resize=1280%2C720",width: 400,height: 400,),
